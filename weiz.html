@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="header-component"></div>
-    <div class="main-component">
-        <div class="hero-component"></div>
-        <div class="opportunity-component"></div>
-        <div class="benefits-component"></div>
-        <div class="footer-component"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="assets/max-planck-gesellschaft.svg" />
+    <title>Ido Bakimer X Max Planck</title>
+  </head>
+  <body>
+    <div class="header-component flex flex-row justify-between w-full">
+      <img src="assets/weiz-Frame.png" alt="weizman institute logo" />
+      <ul class="flex flex-row flex-1">
+        <li>link 1</li>
+        <li>link 2</li>
+        <li>link 3</li>
+      </ul>
+      <img src="assets/max-planck-frame.png" alt="max planck logo" />
     </div>
-    
-</body>
+    <div class="main-component flex flex-col">
+      <div class="hero-component">hero</div>
+      <div class="opportunity-component">opportunity</div>
+      <div class="benefits-component">benefits</div>
+      <div class="footer-component">footer</div>
+    </div>
+  </body>
 </html>
