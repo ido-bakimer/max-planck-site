@@ -97,6 +97,9 @@ body {
         width: 60%;
         margin-right: -40px;
       }
+      .arrow-btn{
+        float: right;
+      }
     }
   }
   /* .orange-frame-effect{
@@ -161,7 +164,7 @@ body {
     padding-top: 20px;
     .opportunity-img {
         top: auto !important;
-        bottom: -60px !important;
+        bottom: -30px !important;
         width: calc(100% - 60px) !important;
         left: -20px !important;
         max-width: 500px;
