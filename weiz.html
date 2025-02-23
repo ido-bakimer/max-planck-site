@@ -23,7 +23,12 @@
         <li>contacts</li>
       </ul>
       <img src="assets/max-planck-frame.png" alt="max planck logo" />
-      <img id="tabs-toggle-button" src="assets/Hamburger_icon.png" alt="Hamburger_icon" onclick="displayTabs()"/>
+      <img
+        id="tabs-toggle-button"
+        src="assets/Hamburger_icon.png"
+        alt="Hamburger_icon"
+        onclick="displayTabs()"
+      />
     </header>
 
     <div class="main-component flex flex-col">
@@ -31,34 +36,47 @@
         <div class="lg:w-1/2 space-y-4 mx-12 my-16">
           <h1 class="text-4xl font-bold">
             Max Planck — Weizmann Joint
-            <span class="text-orange-500">Postdoctoral Program</span>
+            <span class="header-border-effect header-border-effect-left">Postdoctoral Program</span>
           </h1>
-          <p class="text-lg text-gray-700">
+          <p class="text-lg">
             The Max Planck Society and the Weizmann Institute of Science
             announce a prestigious four-year postdoctoral program.
           </p>
-          <p class="text-lg font-semibold">
+          <p class="text-lg">
             Application Deadline: December 5, 2024
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="text-blue-600 underline font-bold"
-              >Ready to Start Your Journey with Us?</a
-            >
+            <span>Ready to Start Your Journey with Us?</span>
             <a href="#" class="bg-orange-500 text-white py-2 px-4"
               >Take the First Step!</a
             >
           </div>
         </div>
-        <div class="lg:w-1/2 mt-8 lg:mt-0">
-          <img
-            src="assets/images/hero-img.png"
-            alt="Researchers in Lab"
-            class=""
-          />
+        <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-end">
+          <img src="assets/images/hero-img.png" alt="Researchers in Lab" />
+          <span class="orange-frame-effect tr"></span>
         </div>
       </section>
 
-      <section class="opportunity-component">opportunity</section>
+      <section class="opportunity-component mx-12 my-16 flex items-center">
+        <img
+          src="assets/images/opportunity-img.png"
+          alt="opportunity Research"
+          class="opportunity-img"
+        />
+        <div class="mx-8">
+          <h2 class="section-header header-border-effect header-border-effect-left pb-4">
+            Unique Opportunities of the Program
+          </h2>
+          <p class="section-paragraph">
+            MPG, situated in Germany, and WIS, located in Israel, have
+            collaborated to present an exceptional postdoctoral program that
+            enhances scientific collaboration and encourages interdisciplinary
+            research.
+          </p>
+
+        </div>
+      </section>
 
       <section class="benefits-component">benefits</section>
 
