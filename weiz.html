@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="weiz.css">
+    <link rel="stylesheet" href="weiz.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="icon" href="assets/max-planck-gesellschaft.svg" />
+    <script src="weiz.js"></script>
+    <link rel="icon" href="assets/max-planck-favi-black.svg" />
     <title>Ido Bakimer X Max Planck</title>
   </head>
   <body>
-    <header class="header-component flex flex-row  w-full">
-      <ul class="flex flex-row justify-between flex-1">
-        <img src="assets/weiz-Frame.png" alt="weizman institute logo" />
+    <header class="header-component flex flex-row w-full">
+      <img src="assets/weiz-Frame.png" alt="weizman institute logo" />
+
+      <ul id="tabs" class="flex flex-row justify-between flex-1">
         <li>home</li>
         <li>institutions</li>
         <li>program</li>
@@ -21,24 +23,45 @@
         <li>contacts</li>
       </ul>
       <img src="assets/max-planck-frame.png" alt="max planck logo" />
-      <img src="assets/Hamburger_icon.png" alt="Hamburger_icon">
+      <img id="tabs-toggle-button" src="assets/Hamburger_icon.png" alt="Hamburger_icon" onclick="displayTabs()"/>
     </header>
+
     <div class="main-component flex flex-col">
-        <section class="hero-component flex flex-col lg:flex-row items-center px-12 py-16">
-            <div class="lg:w-1/2 space-y-4">
-                <h1 class="text-4xl font-bold">Max Planck — Weizmann Joint <span class="text-orange-500">Postdoctoral Program</span></h1>
-                <p class="text-lg text-gray-700">The Max Planck Society and the Weizmann Institute of Science announce a prestigious four-year postdoctoral program.</p>
-                <p class="text-lg font-semibold">Application Deadline: December 5, 2024</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-blue-600 underline font-bold">Ready to Start Your Journey with Us?</a>
-                    <a href="#" class="bg-orange-500 text-white py-2 px-4 rounded-lg">Take the First Step!</a>
-                </div>
-            </div>
-            <div class="lg:w-1/2 mt-8 lg:mt-0">
-                <img src="assets/lab-image.jpg" alt="Researchers in Lab" class="rounded-lg shadow-lg">
-            </div>
-        </section>      <section class="opportunity-component">opportunity</section>
+      <section class="hero-component flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 space-y-4 mx-12 my-16">
+          <h1 class="text-4xl font-bold">
+            Max Planck — Weizmann Joint
+            <span class="text-orange-500">Postdoctoral Program</span>
+          </h1>
+          <p class="text-lg text-gray-700">
+            The Max Planck Society and the Weizmann Institute of Science
+            announce a prestigious four-year postdoctoral program.
+          </p>
+          <p class="text-lg font-semibold">
+            Application Deadline: December 5, 2024
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-600 underline font-bold"
+              >Ready to Start Your Journey with Us?</a
+            >
+            <a href="#" class="bg-orange-500 text-white py-2 px-4"
+              >Take the First Step!</a
+            >
+          </div>
+        </div>
+        <div class="lg:w-1/2 mt-8 lg:mt-0">
+          <img
+            src="assets/images/hero-img.png"
+            alt="Researchers in Lab"
+            class=""
+          />
+        </div>
+      </section>
+
+      <section class="opportunity-component">opportunity</section>
+
       <section class="benefits-component">benefits</section>
+
       <section class="footer-component">footer</section>
     </div>
   </body>
