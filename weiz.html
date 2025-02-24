@@ -37,7 +37,7 @@ and write html with no framework. i added some comments to make this long onepag
     </header>
 
     <div class="main-component flex flex-col">
-      <section class="hero-component flex flex-col lg:flex-row items-center">
+      <section class="hero-component flex flex-col lg:flex-row items-center mb-16">
         <div class="lg:w-1/2 space-y-4 mx-12 my-16">
           <h1 class="text-4xl font-bold">
             Max Planck — Weizmann Joint
@@ -51,7 +51,7 @@ and write html with no framework. i added some comments to make this long onepag
           </p>
           <p class="text-lg">Application Deadline: December 5, 2024</p>
           <div class="flex space-x-4">
-            <span>Ready to Start Your Journey with Us?</span>
+            <h4>Ready to Start Your Journey with Us?</h4>
             <a href="#" class="bg-orange-500 text-white py-2 px-4"
               >Take the First Step!</a
             >
@@ -144,21 +144,75 @@ and write html with no framework. i added some comments to make this long onepag
           In moments like this, i sure do miss angular.
           The general idea is to have each span mimic the border of the div, while giving it the ability to animate it. -->
         <h5 class="border-hover-btn mt-10">
-            <div class="border-hover-btn-content">
-                Do you want to know more?
-                <img src="assets/side-arrow.png" alt="side arrow" />
-            </div>
-            <span ></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="btn-content">
+            Do you want to know more?
+            <img src="assets/side-arrow.svg" alt="side arrow" />
+          </div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </h5>
       </section>
 
-      <section class="faq-component">
+      <section class="faq-component pt-15">
         <h2 class="section-header text-center header-border-effect pb-4">
           Frequently Asked Questions
         </h2>
+        <div class="faq-list py-15">
+          <div class="faq-list-item">
+            <img src="assets/images/faq-1.png" alt="faq-1" />
+            <div class="faq-info">
+              <h3>
+                Who is eligible to apply based on citizenship?
+              </h3>
+              <p class="section-paragraph">
+                Candidates of any nationality are welcome to apply, provided
+                they meet the eligibility criteria outlined on the program page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-list-item">
+            <img src="assets/images/faq-2.png" alt="faq-2" />
+            <div class="faq-info">
+              <h3>
+                Do I need to be physically in Germany or Israel during the
+                program?
+              </h3>
+              <p class="section-paragraph">
+                Yes, you must be physically present at either the Weizmann
+                Institute of Science or an MPG institute as indicated in your
+                application regarding the planned research split.
+              </p>
+            </div>
+          </div>
+          <div class="faq-list-item">
+            <img src="assets/images/faq-3.png" alt="faq-3" />
+            <div class="faq-info">
+              <h3>
+                What is the first step in the application process?
+              </h3>
+              <p class="section-paragraph">
+                The first step is to reach out to researchers at MPG  (see list
+                of institutions)  and  WIS to discuss potential collaborative
+                projects for which researchers from both institutions can serve
+                as joint hosts.
+              </p>
+              <p class="section-paragraph pt-3">
+                Note: Applications submitted without prior contact with PIs from
+                both institutions will be automatically rejected.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- a more streamlined btn, less clutter, but still a dramatic effect -->
+        <h5 class="grow-btn mb-15 mx-auto">
+            <div class="btn-content">
+                Do you want to know more? 
+                <img src="assets/side-arrow.svg" alt="side arrow" />
+            </div>
+            <span class="btn-bg"></span>
+        </h5>
       </section>
       <section class="footer-component">footer</section>
     </div>
