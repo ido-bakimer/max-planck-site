@@ -202,7 +202,13 @@ body {
 /* GENERAL CLASSES */
 
 /* switched the pixel values to rem, and made responsive using clamp values */
-.section-header {
+.hero-header {
+  font-size: clamp(3rem, 5vw, 6rem); /* 32px → 48px */
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* 32px → 48px */
+}
+h2 {
   font-family: ui;
   font-weight: bold;
   /* font-size: clamp(1.5rem, 1.5vw, 2.5rem); */
@@ -219,6 +225,7 @@ h3 {
 h4 {
   font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: bold;
+  text-align: center;
 }
 
 .hidden {
@@ -382,6 +389,75 @@ h4 {
   } /* End vibration */
 }
 
+.wave-btn {
+  width: 170px !important;
+  min-width: 170px !important;
+  height: 40px;
+  position: relative;
+  font-weight: bold;
+  background-color: #ff8038;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    /* mix-blend-mode: multiply; */
+
+    &:nth-child(1) {
+      background-color: #ff8038;
+      width: 100%;
+    }
+    &:nth-child(2) {
+      background-color: #e76d34;
+    }
+    &:nth-child(3) {
+      background-color: #b34b24;
+    }
+    &:nth-child(4) {
+      background-color: #602915; 
+    }
+    &:nth-child(5) {
+      background-color: #000000;
+    }
+  }
+
+  &:hover {
+    div:nth-child(2) {
+      width: 100%;
+      transition-delay: 0s;
+    }
+    div:nth-child(3) {
+      width: 100%;
+      transition-delay: 0.1s;
+    }
+    div:nth-child(4) {
+      width: 100%;
+      transition-delay: 0.2s;
+    }
+    div:nth-child(5) {
+      width: 100%;
+      transition-delay: 0.3s;
+    }
+  }
+}
+
+
 /* MEDIA QUERRIES */
 
 /* large */
@@ -425,6 +501,13 @@ h4 {
         width: 50%;
       }
     }
+  }
+  .col-on-1200{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
   }
 }
 
@@ -515,5 +598,4 @@ h4 {
       grid-template-columns: repeat(1, 1fr) !important;
     }
   }
-  
 }
