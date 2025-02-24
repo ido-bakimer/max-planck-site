@@ -4,217 +4,250 @@
 and write html with no framework. i added some comments to make this long onepager a bit more legible, i hope you like it! -->
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="weiz.css" />
-    <!-- blessed be tailwindcss -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="weiz.js"></script>
-    <link rel="icon" href="assets/max-planck-favi-black.svg" />
-    <title>Ido Bakimer X Max Planck</title>
-  </head>
-  <body>
-    <header class="header-component flex flex-row w-full">
-      <img src="assets/weiz-Frame.png" alt="weizman institute logo" />
-      <ul id="tabs" class="flex flex-row justify-between flex-1">
-        <li>home</li>
-        <li>institutions</li>
-        <li>program</li>
-        <li>application process</li>
-        <li>current postdocs & alumni</li>
-        <li>FAQ</li>
-        <li>contacts</li>
-      </ul>
-      <img src="assets/max-planck-frame.png" alt="max planck logo" />
-      <!-- this button have a differant animation based on the screen size, check it out! -->
-      <img
-        id="tabs-toggle-button"
-        src="assets/Hamburger_icon.png"
-        alt="Hamburger_icon"
-        onclick="displayTabs()"
-      />
-    </header>
 
-    <div class="main-component flex flex-col">
-      <section class="hero-component flex flex-col lg:flex-row items-center mb-16">
-        <div class="lg:w-1/2 space-y-4 mx-12 my-16">
-          <h1 class="text-4xl font-bold">
-            Max Planck — Weizmann Joint
-            <span class="header-border-effect header-border-effect-left"
-              >Postdoctoral Program</span
-            >
-          </h1>
-          <p class="text-lg">
-            The Max Planck Society and the Weizmann Institute of Science
-            announce a prestigious four-year postdoctoral program.
-          </p>
-          <p class="text-lg">Application Deadline: December 5, 2024</p>
-          <div class="flex space-x-4">
-            <h4>Ready to Start Your Journey with Us?</h4>
-            <a href="#" class="bg-orange-500 text-white py-2 px-4"
-              >Take the First Step!</a
-            >
-          </div>
-        </div>
-        <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-end">
-          <img src="assets/images/hero-img.png" alt="Researchers in Lab" />
-          <span class="orange-frame-effect tr"></span>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="weiz.css" />
+  <!-- blessed be tailwindcss -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="weiz.js"></script>
+  <link rel="icon" href="assets/brand/max-planck-favi-black.svg" />
+  <title>Ido Bakimer X Max Planck</title>
+</head>
 
-      <section class="opportunity-component mx-12 my-16 flex items-center">
-        <img
-          src="assets/images/opportunity-img.png"
-          alt="opportunity Research"
-          class="opportunity-img"
-        />
-        <div class="p-8">
-          <h2
-            class="section-header header-border-effect header-border-effect-left pb-4"
-          >
-            Unique Opportunities of the Program
-          </h2>
-          <p class="section-paragraph">
-            MPG, situated in Germany, and WIS, located in Israel, have
-            collaborated to present an exceptional postdoctoral program that
-            enhances scientific collaboration and encourages interdisciplinary
-            research. This unique initiative offers an extraordinary opportunity
-            for talented researchers to engage in groundbreaking projects,
-            benefit from the vast expertise of two prestigious institutions, and
-            actively contribute to the advancement of knowledge in their
-            respective disciplines. The program not only facilitates significant
-            research advancements but also fosters a vibrant academic community,
-            enabling participants to build essential professional networks
-            across various scientific fields.
-          </p>
-          <!-- wiggle animation was kinda tricky to get right, tweaking with the animation timing to get it just right took a while
-           but i think was well worth it. -->
-          <img
-            class="arrow-btn wiggle"
-            src="assets/🦆 icon _arrow back_.png"
-            alt="arrow"
-          />
-        </div>
-      </section>
+<body>
+  <header class="header-component flex flex-row w-full">
+    <img src="assets/brand/weiz-Frame.png" alt="weizman institute logo" />
+    <ul id="tabs" class="flex flex-row justify-between flex-1">
+      <li>home</li>
+      <li>institutions</li>
+      <li>program</li>
+      <li>application process</li>
+      <li>current postdocs & alumni</li>
+      <li>FAQ</li>
+      <li>contacts</li>
+    </ul>
+    <img src="assets/brand/max-planck-frame.png" alt="max planck logo" />
+    <!-- this button have a differant animation based on the screen size, check it out! -->
+    <img id="tabs-toggle-button" src="assets/buttons/Hamburger_icon.png" alt="Hamburger_icon" onclick="displayTabs()" />
+  </header>
 
-      <section class="benefits-component mx-12 mb-16">
-        <h2 class="section-header text-center header-border-effect pb-4">
-          Program Benefits
+  <div class="main-component flex flex-col">
+    <section class="hero-component flex flex-col lg:flex-row items-center mb-16">
+      <div class="lg:w-1/2 space-y-4 mx-12 my-16">
+        <h1 class="text-4xl font-bold">
+          Max Planck — Weizmann Joint
+          <span class="header-border-effect header-border-effect-left">Postdoctoral Program</span>
+        </h1>
+        <p class="text-lg">
+          The Max Planck Society and the Weizmann Institute of Science
+          announce a prestigious four-year postdoctoral program.
+        </p>
+        <p class="text-lg">Application Deadline: December 5, 2024</p>
+        <div class="flex space-x-4">
+          <h4>Ready to Start Your Journey with Us?</h4>
+          <a href="#" class="bg-orange-500 text-white py-2 px-4">Take the First Step!</a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-end">
+        <img src="assets/images/hero-img.png" alt="Researchers in Lab" />
+        <span class="orange-frame-effect tr"></span>
+      </div>
+    </section>
+
+    <section class="opportunity-component mx-12 my-16 flex items-center">
+      <img src="assets/images/opportunity-img.png" alt="opportunity Research" class="opportunity-img" />
+      <div class="p-8">
+        <h2 class="section-header header-border-effect header-border-effect-left pb-4">
+          Unique Opportunities of the Program
         </h2>
-        <div class="benefits-list">
-          <div class="benefits-list-item">
-            <h3>Comprehensive Research Support</h3>
-            <p class="section-paragraph">
-              Fellows benefit from substantial institutional resources at both
-              MPG and WIS, including state-of-the-art lab facilities, diverse
-              scientific expertise, and an established framework for innovative
-              research.
-            </p>
-          </div>
-          <div class="benefits-list-item">
-            <h3>Generous Financial Package</h3>
-            <p class="section-paragraph">
-              Postdocs receive tax-free annual stipends during their time at WIS
-              and competitive salaries per German postdoctoral guidelines while
-              at MPG. This funding includes comprehensive health, nursing, and
-              pension benefits, as well as relocation and housing support.
-            </p>
-          </div>
-          <div class="benefits-list-item">
-            <h3>Independent Research Travel Funding</h3>
-            <p class="section-paragraph">
-              An annual travel allowance of up to €3,000 allows fellows to
-              attend conferences and seminars, supporting networking and
-              professional growth on an international level.
-            </p>
-          </div>
-          <div class="benefits-list-item">
-            <h3>Global Research Collaboration</h3>
-            <p class="section-paragraph">
-              The program promotes interdisciplinary work and international
-              collaboration, engaging fellows with leading scientists from both
-              institutions and across various fields such as physics, chemistry,
-              and life sciences.
-            </p>
-          </div>
-        </div>
+        <p class="section-paragraph">
+          MPG, situated in Germany, and WIS, located in Israel, have
+          collaborated to present an exceptional postdoctoral program that
+          enhances scientific collaboration and encourages interdisciplinary
+          research. This unique initiative offers an extraordinary opportunity
+          for talented researchers to engage in groundbreaking projects,
+          benefit from the vast expertise of two prestigious institutions, and
+          actively contribute to the advancement of knowledge in their
+          respective disciplines. The program not only facilitates significant
+          research advancements but also fosters a vibrant academic community,
+          enabling participants to build essential professional networks
+          across various scientific fields.
+        </p>
+        <!-- wiggle animation was kinda tricky to get right, tweaking with the animation timing to get it just right took a while
+           but i think was well worth it. -->
+        <img class="arrow-btn wiggle" src="assets/buttons/arrow-orange.png" alt="arrow" />
+      </div>
+    </section>
 
-        <!-- Probably would make a whole lot more sense as a generic reusable component with dynamic content,
+    <section class="benefits-component mx-12 mb-16">
+      <h2 class="section-header text-center header-border-effect pb-4">
+        Program Benefits
+      </h2>
+      <div class="benefits-list">
+        <div class="benefits-list-item">
+          <h3>Comprehensive Research Support</h3>
+          <p class="section-paragraph">
+            Fellows benefit from substantial institutional resources at both
+            MPG and WIS, including state-of-the-art lab facilities, diverse
+            scientific expertise, and an established framework for innovative
+            research.
+          </p>
+        </div>
+        <div class="benefits-list-item">
+          <h3>Generous Financial Package</h3>
+          <p class="section-paragraph">
+            Postdocs receive tax-free annual stipends during their time at WIS
+            and competitive salaries per German postdoctoral guidelines while
+            at MPG. This funding includes comprehensive health, nursing, and
+            pension benefits, as well as relocation and housing support.
+          </p>
+        </div>
+        <div class="benefits-list-item">
+          <h3>Independent Research Travel Funding</h3>
+          <p class="section-paragraph">
+            An annual travel allowance of up to €3,000 allows fellows to
+            attend conferences and seminars, supporting networking and
+            professional growth on an international level.
+          </p>
+        </div>
+        <div class="benefits-list-item">
+          <h3>Global Research Collaboration</h3>
+          <p class="section-paragraph">
+            The program promotes interdisciplinary work and international
+            collaboration, engaging fellows with leading scientists from both
+            institutions and across various fields such as physics, chemistry,
+            and life sciences.
+          </p>
+        </div>
+      </div>
+
+      <!-- Probably would make a whole lot more sense as a generic reusable component with dynamic content,
           In moments like this, i sure do miss angular.
           The general idea is to have each span mimic the border of the div, while giving it the ability to animate it. -->
-        <h5 class="border-hover-btn mt-10">
-          <div class="btn-content">
-            Do you want to know more?
-            <img src="assets/side-arrow.svg" alt="side arrow" />
-          </div>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </h5>
-      </section>
+      <h5 class="border-hover-btn mt-10">
+        <div class="btn-content">
+          Do you want to know more?
+          <img src="assets/buttons/side-arrow.svg" alt="side arrow" />
+        </div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </h5>
+    </section>
 
-      <section class="faq-component pt-15">
-        <h2 class="section-header text-center header-border-effect pb-4">
-          Frequently Asked Questions
-        </h2>
-        <div class="faq-list pt-15">
-          <div class="faq-list-item">
-            <img src="assets/images/faq-1.png" alt="faq-1" />
-            <div class="faq-info">
-              <h3>
-                Who is eligible to apply based on citizenship?
-              </h3>
-              <p class="section-paragraph">
-                Candidates of any nationality are welcome to apply, provided
-                they meet the eligibility criteria outlined on the program page.
-              </p>
-            </div>
-          </div>
-          <div class="faq-list-item">
-            <img src="assets/images/faq-2.png" alt="faq-2" />
-            <div class="faq-info">
-              <h3>
-                Do I need to be physically in Germany or Israel during the
-                program?
-              </h3>
-              <p class="section-paragraph">
-                Yes, you must be physically present at either the Weizmann
-                Institute of Science or an MPG institute as indicated in your
-                application regarding the planned research split.
-              </p>
-            </div>
-          </div>
-          <div class="faq-list-item">
-            <img src="assets/images/faq-3.png" alt="faq-3" />
-            <div class="faq-info">
-              <h3>
-                What is the first step in the application process?
-              </h3>
-              <p class="section-paragraph">
-                The first step is to reach out to researchers at MPG  (see list
-                of institutions)  and  WIS to discuss potential collaborative
-                projects for which researchers from both institutions can serve
-                as joint hosts.
-              </p>
-              <p class="section-paragraph pt-3">
-                Note: Applications submitted without prior contact with PIs from
-                both institutions will be automatically rejected.
-              </p>
-            </div>
+    <section class="faq-component pt-15">
+      <h2 class="section-header text-center header-border-effect pb-4">
+        Frequently Asked Questions
+      </h2>
+      <div class="faq-list pt-15">
+        <div class="faq-list-item">
+          <img src="assets/images/faq-1.png" alt="faq-1" />
+          <div class="faq-info">
+            <h3>
+              Who is eligible to apply based on citizenship?
+            </h3>
+            <p class="section-paragraph">
+              Candidates of any nationality are welcome to apply, provided
+              they meet the eligibility criteria outlined on the program page.
+            </p>
           </div>
         </div>
-        <!-- a more streamlined btn, less clutter, but still a dramatic effect -->
-        <h5 class="grow-btn my-15 mx-auto">
-            <div class="btn-content">
-                Do you want to know more? 
-                <img src="assets/side-arrow.svg" alt="side arrow" />
-            </div>
-            <span class="btn-bg"></span>
-        </h5>
-      </section>
-      <section class="footer-component">footer</section>
-    </div>
-  </body>
+        <div class="faq-list-item">
+          <img src="assets/images/faq-2.png" alt="faq-2" />
+          <div class="faq-info">
+            <h3>
+              Do I need to be physically in Germany or Israel during the
+              program?
+            </h3>
+            <p class="section-paragraph">
+              Yes, you must be physically present at either the Weizmann
+              Institute of Science or an MPG institute as indicated in your
+              application regarding the planned research split.
+            </p>
+          </div>
+        </div>
+        <div class="faq-list-item">
+          <img src="assets/images/faq-3.png" alt="faq-3" />
+          <div class="faq-info">
+            <h3>
+              What is the first step in the application process?
+            </h3>
+            <p class="section-paragraph">
+              The first step is to reach out to researchers at MPG  (see list
+              of institutions)  and  WIS to discuss potential collaborative
+              projects for which researchers from both institutions can serve
+              as joint hosts.
+            </p>
+            <p class="section-paragraph pt-3">
+              Note: Applications submitted without prior contact with PIs from
+              both institutions will be automatically rejected.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- a more streamlined btn, less clutter, but still a dramatic effect -->
+      <h5 class="grow-btn my-15 mx-auto">
+        <div class="btn-content">
+          Do you want to know more?
+          <img src="assets/buttons/side-arrow.svg" alt="side arrow" />
+        </div>
+        <span class="btn-bg"></span>
+      </h5>
+    </section>
+    <section class="footer-component">
+      <div class="footer-content">
+        <div class="footer-content right">
+          <div class="img-cont">
+            <img src="assets/brand/max-planck-frame.png" alt="">
+          </div>
+          <h3>Max Planck Society (MPG)</h3>
+          <h4>Stefanie Gottschalk</h4>
+          <div class="contact-cont">
+            <img src="assets/media icons/mail.svg" alt="">
+            <span>postdoc@gv.mpg.de</span>
+          </div>
+          <div class="contact-cont">
+            <img src="assets/media icons/phone.svg" alt="">
+            <span>+49 89 2108-1490</span>
+          </div>
+          <div class="social-cont">
+            <img src="assets/media icons/instagram.png" alt="">
+            <img src="assets/media icons/facebook.png" alt="">
+            <img src="assets/media icons/linkedin.png" alt="">
+            <img src="assets/media icons/x.png" alt="">
+            <img src="assets/media icons/youtube.png" alt="">
+          </div>
+        </div>
+        <div class="footer-content left">
+          <div class="img-cont">
+            <img src="assets/brand/weiz-Frame.png" alt="">
+          </div>
+          <h3>Weizmann Institute of Science (WIS)</h3>
+          <h4>Livnat Moses</h4>
+          <div class="contact-cont">
+            <img src="assets/media icons/mail.svg" alt="">
+            <span>postdoc@weizmann.ac.il</span>
+          </div>
+          <div class="contact-cont">
+            <img src="assets/media icons/phone.svg" alt="">
+            <span>+972-8-9343842</span>
+          </div>
+          <div class="social-cont">
+            <img src="assets/media icons/instagram.png" alt="">
+            <img src="assets/media icons/facebook.png" alt="">
+            <img src="assets/media icons/linkedin.png" alt="">
+            <img src="assets/media icons/x.png" alt="">
+            <img src="assets/media icons/youtube.png" alt="">
+          </div>
+        </div>
+        <span class="rights-reserved py-10 w-full text-center">
+          © 2024 Max Planck-Weizmann Joint Postdoctoral Program. All rights reserved.
+        </span>
+    </section>
+  </div>
+</body>
+
 </html>
