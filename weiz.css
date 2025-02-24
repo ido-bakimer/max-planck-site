@@ -48,7 +48,7 @@ body {
   }
   .main-component {
     z-index: -1;
-
+    overflow: hidden;
     .header-border-effect {
       &::after {
         content: " ";
@@ -75,6 +75,7 @@ body {
     }
     .opportunity-component {
       background-color: #f5ede3;
+      position: relative;
       .general-img-cont {
         position: relative;
         top: -1.25rem;
@@ -87,10 +88,15 @@ body {
         float: right;
         cursor: pointer;
       }
+      .vectors-container {
+        margin-block: calc(var(--spacing) * -16);
+        margin-inline: calc(var(--spacing) * -12);
+      }
     }
     .benefits-component {
       display: flex;
       flex-direction: column;
+      position: relative;
       .benefits-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -103,8 +109,13 @@ body {
           flex: 1;
         }
       }
+      .vectors-container {
+        margin-bottom: calc(var(--spacing) * -16);
+        margin-inline: calc(var(--spacing) * -12);
+      }
     }
     .faq-component {
+      position: relative;
       background-color: #003d52;
       color: white;
       .faq-list {
@@ -114,6 +125,7 @@ body {
           background-color: #084459;
           justify-content: center;
           flex-direction: row;
+          padding: 0 10vw;
           &:nth-of-type(even) {
             flex-direction: row-reverse;
             background-color: #003d52;
@@ -129,6 +141,7 @@ body {
       }
     }
     .footer-component {
+      position: relative;
       background-color: #161617;
       display: flex;
       flex-direction: column;
@@ -196,6 +209,9 @@ body {
         border-top: #ffffff4d 1px solid;
       }
     }
+    .vectors-container{
+      /* max-width: 100%; */
+    }
   }
 }
 
@@ -204,28 +220,88 @@ body {
 /* switched the pixel values to rem, and made responsive using clamp values */
 .hero-header {
   font-size: clamp(3rem, 5vw, 6rem); /* 32px → 48px */
+  z-index: 1;
 }
 h1 {
   font-size: clamp(2rem, 5vw, 3rem); /* 32px → 48px */
+  z-index: 1;
 }
 h2 {
   font-family: ui;
   font-weight: bold;
-  /* font-size: clamp(1.5rem, 1.5vw, 2.5rem); */
+  z-index: 1;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 p {
   font-weight: 300;
   font-size: clamp(0.8rem, 1.5vw, 1rem);
+  z-index: 1;
 }
 h3 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 400;
+  z-index: 1;
 }
 h4 {
   font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: bold;
   text-align: center;
+  z-index: 1;
+}
+
+.vectors-container {
+  /* background: #a05f5f85; */
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* max-width: 100%; */
+  img {
+    position: absolute;
+  }
+  .hero-vector {
+    right: 0;
+    bottom: -130px;
+    width: 80%;
+  }
+  .opportunity-vector {
+    height: 25vw;
+    min-height: 200px;
+    top: -7vw;
+  }
+  .white-rose {
+    height: 50vw;
+    top: calc(100% - 22vw);
+    right: calc(var(--spacing)* -24);
+  }
+  .petal-1 {
+    left: 5vw;
+    transform: rotate(-46deg);
+    top: calc(-190px + 10vw);;
+  }
+  .petal-2 {
+    height: 90px;
+    top: calc(-165px + 10vw);;
+    left: calc(400px - 10vw);
+  }
+  .faq-orange{
+    left: -10vw;
+    height: 40vw;
+    top: 13%;  }
+    .white-flower{
+      bottom: calc(14% - 6vw);
+      height: 70vw;
+      right: 0;
+    }
+    .footer-vector{
+      bottom: 0;
+      right: 0;
+    }
 }
 
 .general-img-cont {
@@ -366,9 +442,9 @@ h4 {
       border-bottom: #ff8038 solid 2px;
       border-left: #ff8038 solid 2px;
       top: auto;
-            right: auto;
-            left: 1.25rem;
-            bottom: 1.25rem;
+      right: auto;
+      left: 1.25rem;
+      bottom: 1.25rem;
     }
   }
 }
@@ -480,6 +556,12 @@ h4 {
   }
 }
 
+.col-on-1600 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* MEDIA QUERRIES */
 
 /* large */
@@ -514,6 +596,16 @@ h4 {
       }
     }
   }
+  .col-on-1600 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    h4{
+      text-align: left;
+    }
+  }
 }
 /* medium */
 @media (max-width: 1200px) {
@@ -523,13 +615,6 @@ h4 {
         width: 50%;
       }
     }
-  }
-  .col-on-1200 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
   }
 }
 
@@ -583,6 +668,7 @@ h4 {
       right: 1.25rem;
       margin-top: -2.5rem;
     }
+
   }
   .benefits-component {
     .benefits-list {
@@ -619,5 +705,8 @@ h4 {
     .benefits-list {
       grid-template-columns: repeat(1, 1fr) !important;
     }
+  }
+  .white-rose , .petal-1 , .petal-2 {
+display: none;
   }
 }
